@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: mental-health-chatbot
+    env: node
+    buildCommand: npm run render-build
+    startCommand: npm start
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
