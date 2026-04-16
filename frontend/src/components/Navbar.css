@@ -1,0 +1,71 @@
+.navbar {
+  background-color: var(--nav-bg);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  transition: var(--transition);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.navbar-logo:hover {
+  color: var(--primary-hover);
+}
+
+.logo-icon {
+  color: var(--secondary-color);
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  background-color: var(--bubble-bot-bg);
+  color: var(--primary-color);
+}
+
+.nav-link.active {
+  background-color: var(--bubble-user-bg);
+  color: var(--primary-color);
+}
+
+.theme-toggle {
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .navbar-links {
+    gap: 0.5rem;
+  }
+}

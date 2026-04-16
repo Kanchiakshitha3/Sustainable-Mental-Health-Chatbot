@@ -1,0 +1,10 @@
+{
+  "name": "mental-health-chatbot-deploy",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "install-backend": "cd backend && npm install",
+    "render-build": "npm run build && npm run install-backend",
+    "start": "cd backend && node server.js"
+  }
+}
